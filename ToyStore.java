@@ -38,7 +38,8 @@ public class ToyStore {
         try {
             FileWriter writer = new FileWriter(FILE_NAME);
             
-            for  (int i = 0; i < 10; i++) {                int randomWeight = (int) (Math.random() * 10) + 1;
+            for  (int i = 0; i < 10; i++) {                
+                int randomWeight = (int) (Math.random() * 10) + 1;
                 Toy toy = getToy(randomWeight);
                 
                 writer.write(toy.toString() + "\n");
